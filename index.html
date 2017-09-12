@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bingo</title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+<body>
+	<div id="outer-container">
+		<div id="container">
+			<div class="row">
+				<div class="title">
+					<h1>B</h1>
+				</div>
+				<div class="title">
+					<h1>I</h1>
+				</div>
+				<div class="title">
+					<h1>N</h1>
+				</div>
+				<div class="title">
+					<h1>G</h1>
+				</div>
+				<div class="title">
+					<h1>O</h1>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box a B" onclick="marker(this);">
+					<p>1</p>
+				</div>
+				<div class="box a I" onclick="marker(this);">
+					<p>2</p>
+				</div>
+				<div class="box a N" onclick="marker(this);">
+					<p>3</p>
+				</div>
+				<div class="box a G" onclick="marker(this);">
+					<p>4</p>
+				</div>
+				<div class="box a O" onclick="marker(this);">
+					<p>5</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box b B" onclick="marker(this);">
+					<p>6</p>
+				</div>
+				<div class="box b I" onclick="marker(this);">
+					<p>7</p>
+				</div>
+				<div class="box b N" onclick="marker(this);">
+					<p>8</p>
+				</div>
+				<div class="box b G" onclick="marker(this);">
+					<p>9</p>
+				</div>
+				<div class="box b O" onclick="marker(this);">
+					<p>10</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box c B" onclick="marker(this);">
+					<p>11</p>
+				</div>
+				<div class="box c I" onclick="marker(this);">
+					<p>12</p>
+				</div>
+				<div class="box" id="free" >
+					<p>FREE</p>
+				</div>
+				<div class="box c G" onclick="marker(this);">
+					<p>14</p>
+				</div>
+				<div class="box c O" onclick="marker(this);">
+					<p>15</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box d B" onclick="marker(this);">
+					<p>16</p>
+				</div>
+				<div class="box d I" onclick="marker(this);">
+					<p>17</p>
+				</div>
+				<div class="box d N" onclick="marker(this);">
+					<p>18</p>
+				</div>
+				<div class="box d G" onclick="marker(this);">
+					<p>19</p>
+				</div>
+				<div class="box d O" onclick="marker(this);">
+					<p>20</p>
+				</div>
+			</div>
+			<div class="row">
+				<div class="box e B" onclick="marker(this);">
+					<p>21</p>
+				</div>
+				<div class="box e I" onclick="marker(this);">
+					<p>22</p>
+				</div>
+				<div class="box e N" onclick="marker(this);">
+					<p>23</p>
+				</div>
+				<div class="box e G" onclick="marker(this);">
+					<p>24</p>
+				</div>
+				<div class="box e O" onclick="marker(this);">
+					<p>25</p>
+				</div>
+			</div>
+		</div>
+		<div id="user-panel">
+			<div id="user-container">
+				<h1></h1>
+				<p>Current Number</p>
+				<button type="button" class="btn btn-sm btn-primary" onclick="GenerateCurrentNumber()">Next Number</button>
+				<div class="form-group">
+			    	<label for="exampleSelect1">Goal:</label>
+			    	<select class="form-control" id="selection">
+			      		<option>Horizontal</option>
+			      		<option>Vertical</option>
+			      		<option>Diagonal</option>
+			      		<option>4 Corners</option>
+			      		<option>Full Card</option>
+			    	</select>
+			  	</div>
+			  	<button type = "button" onclick="checkWinner();" class = "btn btn-primary">BINGO!</button>
+			  	<p id="winner"></p>
+		  	</div>
+		</div>
+	</div>
+<script type="text/javascript" src="main.js"></script>
+</body>
+</html>

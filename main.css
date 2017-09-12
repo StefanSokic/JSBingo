@@ -1,0 +1,80 @@
+body {
+	background-image: url('jerry.jpg');
+	background-repeat: no-repeat;
+    background-size: cover;
+}
+#outer-container {
+	display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+   color: #fff;
+}
+#container {
+	border-radius: 0.5em;
+	display: inline-block;
+	margin: 8% 25%;
+	border-radius: 1em;
+	-webkit-box-shadow: 3px 10px 32px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 3px 10px 32px -5px rgba(0,0,0,0.65);
+	box-shadow: 3px 10px 32px -5px rgba(0,0,0,0.65);
+}
+#container:hover {
+	cursor: pointer;
+}
+.row {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row;
+   flex-direction: row;
+
+   background-color: #3C2786;
+}
+.box {
+	min-width: 6em;
+	min-height: 6em;
+	border: 2px solid #04C4C7;
+}
+.title {
+	min-width: 6em;
+	min-height: 6em;
+}
+.title h1 {
+	margin-left: 0.8em;
+	margin-top: 0.7em;
+}
+.box p {
+	margin-left: 2em;
+	margin-top: 2em;
+}
+#user-container {
+	text-align: center;
+	max-width: 15em;
+	margin-left: 1.3em;
+}
+#user-panel {
+	background-color: #3C2786;
+	min-width: 18em;
+	max-height: 26em;
+	margin: 8% -18%;
+
+	-webkit-box-shadow: 3px 10px 32px -5px rgba(0,0,0,0.65);
+	-moz-box-shadow: 3px 10px 32px -5px rgba(0,0,0,0.65);
+	box-shadow: 3px 10px 32px -5px rgba(0,0,0,0.65);
+}
+#user-panel h1 {
+	font-size: 50pt;
+}
+.form-group {
+	margin-top: 2em;
+}
+#free {
+	background-color: #04C4C7;
+}
+#free p {
+	margin-left: 0.8em;
+}
+#winner {
+	margin-top: 1em;
+	font-size: 16pt;
+}
