@@ -153,7 +153,6 @@ function checkWinner() {
 			winner.innerHTML = "Fake news, no Bingo.";
 		}
 	}
-	// Hard coding ruins lives
 	if (selected == "Diagonal") {
 		if (((current_board_array[0][0]) == true && (current_board_array[1][1]) == true && (current_board_array[3][3]) == true && (current_board_array[4][4]) == true) || (((current_board_array[0][4]) == true && (current_board_array[1][3]) == true && (current_board_array[3][1]) == true && (current_board_array[4][0]) == true))) {
 			winner.innerHTML = "DIAGONAL WIN!";
